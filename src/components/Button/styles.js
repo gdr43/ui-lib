@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -15,6 +13,9 @@ export const StyledButton = styled.button`
   width: fit-content;
   padding: 0 10px;
   border-radius: 4px;
+
+  background-color: ${(props) => props.type === 'secondary' ? '#28a745' : '#007bff'};
+  border-color: ${(props) => props.type === 'secondary' ? '#28a745' : '#007bff'};
 
   :hover {
     background-color: #3395ff;

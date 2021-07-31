@@ -3,10 +3,10 @@ import React from 'react';
 import { StyledButton } from './styles';
 
 const Button = (props) => {
-    const { children } = props
+    const { children, type } = props
 
     return (
-        <StyledButton>{children}</StyledButton>
+        <StyledButton type={type}>{children}</StyledButton>
     )
 }
 
