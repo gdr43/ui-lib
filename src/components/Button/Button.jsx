@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Button = () => {
+import { StyledButton } from './styles';
+
+const Button = (props) => {
+    const { children } = props
 
     return (
-        <button>Hello</button>
+        <StyledButton>{children}</StyledButton>
     )
 }
 
